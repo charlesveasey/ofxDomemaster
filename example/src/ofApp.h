@@ -23,7 +23,5 @@ class ofApp : public ofBaseApp{
 
         ofxDomemaster domemaster;
         ofSpherePrimitive sphere;
-        ofImage image;
-        ofConePrimitive cube;
     
 };
