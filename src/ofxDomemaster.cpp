@@ -57,6 +57,8 @@ void ofxDomemaster::draw(){
             renderFbo[i].getTextureReference().bind();
             ofPushMatrix();
             ofRotate(90,1,0,0);
+            ofRotate(180,0,0,1);
+            ofRotate(180,0,1,0);
             ofScale(meshScale, meshScale, meshScale);
             renderMesh[i].drawFaces();
             ofPopMatrix();

@@ -52,7 +52,7 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-    sphere.setPosition(ofMap(x, 0, 1024, -25, 25), ofMap(y, 0, 1024, 25, -25), 5);
+    sphere.setPosition(ofMap(x, 0, 1024, -25, 25), ofMap(y, 0, 1024, -25, 25), 5);
 }
 
 //--------------------------------------------------------------
