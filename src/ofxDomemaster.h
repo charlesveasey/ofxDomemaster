@@ -14,7 +14,7 @@ class ofxDomemaster{
         void setCameraPosition(float x, float y, float z);
         void setMeshScale(float s);
     
-    const int renderCount = 5;
+    static const int renderCount = 5;
 
     private:
         ofRectangle view;
