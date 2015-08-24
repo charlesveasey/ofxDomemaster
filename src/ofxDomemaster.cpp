@@ -56,6 +56,7 @@ void ofxDomemaster::draw(){
         for (int i=0; i<renderCount; i++){
             renderFbo[i].getTextureReference().bind();
             ofPushMatrix();
+            ofTranslate(-width/2,-height/2,0);
             ofRotate(90,1,0,0);
             ofRotate(180,0,0,1);
             ofRotate(180,0,1,0);
