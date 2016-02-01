@@ -28,7 +28,7 @@ void ofxDomemaster::setup(){
     renderMesh[top].load("domemaster/top.ply");
     
     // mask
-    mask.loadImage("domemaster/mask.png");
+    mask.load("domemaster/mask.png");
     mask.setUseTexture(true);
 }
 
@@ -54,7 +54,7 @@ void ofxDomemaster::draw(){
         ofEnableNormalizedTexCoords();
     
         for (int i=0; i<renderCount; i++){
-            renderFbo[i].getTextureReference().bind();
+            renderFbo[i].getTexture().bind();
             ofPushMatrix();
             ofTranslate(-width/2,-height/2,0);
             ofRotate(90,1,0,0);
@@ -63,7 +63,7 @@ void ofxDomemaster::draw(){
             ofScale(meshScale, meshScale, meshScale);
             renderMesh[i].drawFaces();
             ofPopMatrix();
-            renderFbo[i].getTextureReference().unbind();
+            renderFbo[i].getTexture().unbind();
         }
     
         ofDisableNormalizedTexCoords();
